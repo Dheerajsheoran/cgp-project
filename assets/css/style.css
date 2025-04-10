@@ -236,7 +236,7 @@ menu-btn {
     line-height: normal;
 }
 
-.Easiest {
+.easiest {
     max-width: 291px;
     width: 100%;
     margin-bottom: 0px;
@@ -326,8 +326,8 @@ menu-btn {
 }
 
 /* section-3=================================== */
-.learn-how {
-    background: url(/assets/image/png/learn-how-bg.png) no-repeat center;
+.learn-how-section {
+    background: url(/assets/image/png/learn-how-section-bg.png) no-repeat center;
     background-size: cover;
 }
 
@@ -449,7 +449,7 @@ menu-btn {
     font-size: 17px;
 }
 
-.Ethereum-a {
+.ethereum-a {
     color: #FFF;
     margin-top: 17px;
     margin-bottom: 0;
@@ -550,7 +550,7 @@ menu-btn {
     }
 }
 
-.Ethereum-b {
+.ethereum-b {
     color: #9f9f9f;
     max-width: 300px;
     width: 100%;
