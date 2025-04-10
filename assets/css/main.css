@@ -1,0 +1,93 @@
+.hero-main {
+    padding: 126px 16px 145px;
+}
+
+
+
+/* section-4============================== */
+
+.api-refrence-main {
+    background: url(/assets/image/png/api-reference.png) no-repeat center;
+    background-size: cover;
+    padding: 56px 12px 75px;
+}
+
+.card-c:hover {
+    background: none;
+    cursor: pointer;
+}
+
+.api-refrence-card-div {
+    width: 92px;
+    text-align: center;
+}
+
+.api {
+    text-align: center;
+    color: #fff;
+    font-family: Bebas Neue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.Including {
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Tomorrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reference-div-1 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 54px;
+}
+
+.reference-div-2 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    margin-top: 42px;
+}
+
+@media (max-width: 767.98px) {
+    .reference-div-2 {
+        flex-direction: column;
+        margin-top: -140px;
+    }
+
+    .reference-div-1 {
+        flex-direction: column;
+    }
+
+    .mainnew {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.Ethereum-a {
+    color: #fff;
+    margin-top: 17px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
