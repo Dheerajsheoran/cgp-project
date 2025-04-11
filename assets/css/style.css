@@ -1,640 +1,502 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clicker+Script&family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Clicker+Script&family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 .tomorrow-family {
-    font-family: 'Tomorrow', sans-serif;
+  font-family: "Tomorrow", sans-serif;
 }
 
 .bebas-family {
-    font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-
 .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 header {
-    background: url('/assets/image/png/header-bg.png') no-repeat center center/cover;
+  background: url("/assets/image/png/header-bg.png") no-repeat center center/cover;
 }
 
 .navbar {
-    max-width: 1120px;
-    margin: auto;
-    padding-top: 38px;
+  max-width: 1120px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.sidebar-bg {
+  background-color: rgba(0, 0, 0, 0.77);
 }
 
 menu-btn {
-    border: none;
+  border: none;
 }
 
-.nav-link {
-    width: 97px;
-    color: #FFF !important;
-    font-size: 15px;
-    font-weight: 400;
+.navbar-link {
+  width: 100px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
-.nav-link:hover {
-    color: #36BEFF !important;
-    cursor: pointer;
+.navbar-link:hover {
+  font-weight: 700;
+  transition-duration: 300ms;
 }
 
-.Docs {
-    font-weight: 700;
+.navbar-btn {
+  border-radius: 45px;
+  width: 160px;
+  border: 1px solid #fff;
+  padding-inline: 22px;
+  padding-block: 6px;
+  background-color: transparent;
 }
 
-.btn-launch {
-    color: #FFF;
-    border-radius: 45px;
-    border: 1px solid #FFF;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 6px 22px;
-    background-color: transparent;
+.navbar-btn:hover {
+  background: var(--text-skyblue) !important;
+  color: #000 !important;
 }
 
-.btn-launch:hover {
-    background: #36BEFF !important;
-    color: #000 !important;
+.Hero-container {
+  padding-top: 110px;
+  padding-bottom: 150px;
 }
 
 .social-icons {
-    display: flex;
-    gap: 18px;
-    margin-left: 34px;
+  display: flex;
+  gap: 18px;
+  margin-left: 34px;
 }
 
-
-.the-web {
-    color: #FFF;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 65px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 0;
+.fs-65 {
+  font-size: 65px;
+  text-transform: uppercase;
 }
 
-.view-api {
-    color: #FFF;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 400;
-    margin-top: 16px;
-    margin-bottom: 0;
+.mt-21 {
+  font-size: 17px;
+  margin-top: 21px;
 }
 
-.btn-a {
-    color: #FFF;
-    background: none;
-    border-radius: 45px;
-    border: 1px solid #FFF;
-    padding: 11px 35px;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 50px;
-    transition: all 0.3s ease-in-out;
+.icon-comtainer {
+  max-width: 400px;
+  width: 100%;
 }
 
-.btn-a:hover {
-    background: #36BEFF;
-    color: #000;
-    border: 1px solid #36BEFF;
+.btn-hero {
+  background: var(--text-skyblue);
+  max-width: 186px;
+  border-radius: 45px;
+  border: 1px solid var(--text-skyblue);
+  padding-inline: 35px;
+  padding-block: 12px;
+  margin-top: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
-
-.the-web {
-    color: #fff;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Bebas Neue;
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 27px;
+.btn-hero:hover {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid #fff;
 }
 
-@media (max-width: 575.98px) {
-    .the-web {
-        font-size: 45px;
-        margin-top: 0px;
-    }
-
-    .view-api {
-        font-size: 13px;
-        margin-top: 0px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .view-api {
-        font-size: 15px;
-    }
-
-    .the-web {
-        font-size: 55px;
-        margin-top: 0px;
-    }
-}
-
-.view-api {
-    color: #fff;
-    margin-top: 16px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Tomorrow;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.btn-a {
-    margin: auto;
-    color: #fff;
-    background: none;
-    border-radius: 45px;
-    border: 1px solid #fff;
-    text-align: center;
-    padding: 11px 35px;
-    text-align: center;
-    font-family: Tomorrow;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    margin-top: 50px;
-}
-
-.btn-a:hover {
-    background: #36beff;
-    color: #000;
-    border: 1px solid #36beff;
-}
-
-/* section-2=========================== */
+/* section-2 */
 
 .most-popular-section {
-    background: url(/assets/image/png/container-a-bg.png) no-repeat center;
-    background-size: cover;
-    padding: 50px 12px 50px;
+  background: url(/assets/image/png/container-a-bg.png) no-repeat center;
+  background-size: cover;
+  padding: 45px 12px 74px;
 }
 
-.Most-popular {
-    color: #fff;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Bebas Neue;
-    font-size: 40px;
-    font-weight: 400;
+.most-popular {
+  font-size: 40px;
 }
 
 .card-main {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    column-gap: 35px;
-    row-gap: 24px;
-    margin-top: 67px;
+  max-width: 1136px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
+  column-gap: 36px;
+  row-gap: 24px;
+  margin-top: 60px;
 }
 
 .most-popular-card {
-    max-width: 348px;
-    width: 100%;
-    padding: 26px 5px 23px 11px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 1px solid #969696;
-    opacity: 0.55;
-    background: #475c83;
-    cursor: pointer;
+  max-width: 348px;
+  padding: 20px 5px 17px 11px;
+  border-radius: 16px;
+  border: 1px solid #969696;
+  background-color: var(--bg-blue);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .most-popular-card:hover {
-    background: none;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+.gap-sm {
+  gap: 14px;
 }
 
 .nft-api {
-    color: #fff;
-    width: 174px;
-    margin-bottom: 0px;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  width: 174px;
+  line-height: 120%;
 }
 
 .easiest {
-    max-width: 291px;
-    width: 100%;
-    margin-bottom: 0px;
-    color: #fff;
-    font-family: Tomorrow;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    /* 142.857% */
-    letter-spacing: 0.14px;
-    margin-top: 23px;
+  max-width: 320px;
+  line-height: 142.857%;
+  letter-spacing: 0.14px;
+  margin-top: 23px;
+}
+
+.learn-text {
+  max-width: 291px;
+}
+
+.sdktext {
+  max-width: 150px;
+  line-height: 120%;
+}
+
+.query-text {
+  max-width: 311px;
 }
 
 .alchemy_pending {
-    max-width: 194px;
-    width: 100%;
-    color: #fff;
-
-    margin-bottom: 0px;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  max-width: 194px;
+  line-height: 120%;
 }
 
-.What {
-    max-width: 243px;
-    width: 100%;
-    color: #fff;
-    margin-bottom: 0px;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.mw-243 {
+  max-width: 243px;
+  line-height: 120%;
 }
 
 .how {
-    max-width: 263px;
-    width: 100%;
-    color: #fff;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
+  max-width: 263px;
+  line-height: 120%;
 }
 
-@media (max-width: 1279.98px) {
-    .card-main {
-        display: grid;
-        justify-content: center;
-        column-gap: 25px;
-        row-gap: 24px;
-    }
-}
+/* section-3 */
 
-@media (max-width: 991.98px) {
-    .card-main {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: auto auto;
-        column-gap: 25px;
-        row-gap: 24px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .card-main {
-        display: grid;
-        justify-content: center;
-        column-gap: 25px;
-        row-gap: 24px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .card-main {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: auto;
-        column-gap: 35px;
-        row-gap: 24px;
-        margin-top: 47px;
-    }
-}
-
-/* section-3=================================== */
 .learn-how-section {
-    background: url(/assets/image/png/learn-how-bg.png) no-repeat center;
-    background-size: cover;
+  background: url(/assets/image/png/learn-how-bg.png) no-repeat center;
+  background-size: cover;
 }
 
-.learn-card:hover {
-    background: none;
-    cursor: pointer;
+.learn-how-main {
+  max-width: 1200px;
+  padding: 35px 12px 57px;
 }
 
 .learn {
-    color: #fff;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Bebas Neue;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  font-size: 40px;
 }
 
 .learn-card-main {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 35px;
-    margin-top: 30px;
-}
-
-@media (max-width: 991.98px) {
-    .learn-card-main {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 35px;
-        flex-wrap: wrap;
-        padding-left: 30px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .learn-card-main {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        gap: 10px;
-        padding-left: 0px;
-    }
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
+  gap: 35px;
+  margin-top: 30px;
+  padding-inline: 30px;
 }
 
 .learn-card {
-    max-width: 348px;
-    width: 100%;
-    border-radius: 16px;
-    border: 1px solid #313131;
-    background: #000;
-    padding: 32px 0px 22px 11px;
+  max-width: 348px;
+  border-radius: 16px;
+  border: 1px solid #313131;
+  padding: 28px 0px 22px 11px;
+  transition: all 0.3s ease-in-out;
+}
+
+.learn-card:hover {
+ scale: 1.05;
+  cursor: pointer;
 }
 
 .Alchemy-University {
-    max-width: 195px;
-    width: 100%;
-    color: #fff;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 0px;
+  max-width: 195px;
+  line-height: 100%;
 }
 
 .ethereum {
-    color: #9f9f9f;
-    max-width: 312px;
-    width: 100%;
-    font-family: Tomorrow;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 0px;
-    margin-top: 25px;
+  color: #9f9f9f;
+  max-width: 312px;
+  margin-top: 25px;
 }
 
 .view-a {
-    width: 140px;
-    color: #fff;
-    margin-bottom: 0px;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
+  width: 140px;
+  line-height: 110%;
 }
 
 .Create {
-    width: 174px;
-    color: #fff;
-    margin-bottom: 0px;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
+  width: 174px;
+  line-height: 100%;
 }
 
-/* section-4============================== */
+/* section-4*/
 
+.api-container {
+  background: url(/assets/image/png/container-b-bg.png) no-repeat center;
+  background-size: cover;
+}
 
-.container-c {
-    background: url(/assets/image/png/container-b-bg.png) no-repeat center;
-    background-size: cover;
+.sub-api-container {
+  max-width: 1200px;
+  padding-bottom: 68px;
+}
+
+.imgdiv {
+  width: 92px;
 }
 
 .API {
-    text-align: center;
-    color: #FFF;
-    font-size: 40px;
-    margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 .Including {
-    color: #FFF;
-    margin-top: 24px;
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 17px;
+  color: #fff;
+  margin-top: 24px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 17px;
 }
 
 .ethereum-a {
-    color: #FFF;
-    margin-top: 17px;
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 16px;
+  margin-top: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 16px;
 }
 
-/* Optional hover effect */
-.card-c:hover {
-    background: none;
-    cursor: pointer;
-}
 
-.join-web-main {
-    background: url(/assets/image/png/join-web.png) no-repeat center;
-    background-size: cover;
-    padding: 47px 12px 40px;
-}
 
 .get {
-    color: #ecf0f9;
-    margin-top: 38px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Segoe UI;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+  margin-top: 28px;
+  font-family: Segoe UI;
+  line-height: 24px;
 }
 
-/* section-5=================================== */
+/* section-5 */
 
 .use-case-main {
-    background: url(/assets/image/png/use-case.png) no-repeat center;
-    background-size: cover;
-    padding: 49px 12px 75px;
+  background: url(/assets/image/png/use-case.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 12px 70px;
 }
 
 .use {
-    color: #fff;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Bebas Neue;
-    font-size: 40px;
-    font-weight: 400;
+  font-size: 40px;
+}
+
+.trust {
+  font-size: 40px;
+  margin-top: 58px;
+  line-height: 100%;
 }
 
 .apis {
-    color: #fff;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Tomorrow;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 14px;
+  margin-top: 14px;
 }
 
 .card-c {
-    max-width: 348px;
-    width: 100%;
-    border-radius: 16px;
-    border: 1px solid #313131;
-    background: #000;
-    padding: 32px 33px 22px 11px;
+  max-width: 348px;
+  border-radius: 16px;
+  border: 1px solid #313131;
+  padding: 32px 33px 22px 11px;
+}
+
+.card-c:hover {
+
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
 .newcard-b {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    column-gap: 35px;
-    row-gap: 24px;
-    margin-top: 46px;
+display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 35px;
+  row-gap: 24px;
+  margin-top: 42px !important;
 }
 
-@media (max-width: 991.98px) {
-    .newcard-b {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 35px;
-        flex-wrap: wrap;
-        padding-left: 30px;
-    }
+/* section 6 */
+.join-web-main {
+  background: url(/assets/image/png/join-web.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 12px 40px;
 }
 
-@media (max-width: 767.98px) {
-    .newcard-b {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        gap: 10px;
-        padding-left: 0px;
-    }
+.section6-icon-div {
+  gap: 18px;
+  margin-top: 40px;
 }
 
 .ethereum-b {
-    color: #9f9f9f;
-    max-width: 300px;
-    width: 100%;
-    font-family: Tomorrow;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 0px;
-    margin-top: 25px;
+  color: #9f9f9f;
+  max-width: 300px;
+  margin-top: 25px;
 }
 
-/* section-6===================== */
-.join-web-main {
-    background: url(/assets/image/png/join-web.png) no-repeat center;
-    background-size: cover;
-    padding: 47px 12px 40px;
-}
-
-.get {
-    color: #ecf0f9;
-    margin-top: 38px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: Segoe UI;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-
+/* footer */
 
 .footer-main {
-    background-color: #000;
+  background-color: #000;
+  padding: 81px 42px 0px;
 }
 
-/* Responsive flex-direction for .cant-cd and .cant-cdd */
-@media (max-width: 767.98px) {
+.copy {
+  color: #939393;
+  max-width: 464px;
+  padding-bottom: 34.5px;
+  font-size: 10px;
+}
 
-    .cant-cd,
-    .cant-cdd {
-        flex-direction: column !important;
-        align-items: center;
-    }
+.powering {
+  font-size: 9px;
+}
+
+.copyright {
+  margin-left: 150px;
+}
+
+.footer-links {
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 10px;
+}
+
+.chain {
+  margin-top: -8px;
 }
 
 
+
+/* responsive breakpoints */
+@media (max-width: 1279.98px) {
+  .card-main {
+    display: grid;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 24px;
+  }
+}
 
 @media (max-width: 991.98px) {
-    .social-icons {
-        margin-top: 15px;
-        margin-left: 0;
-    }
+  .social-icons {
+    margin-top: 15px;
+    margin-left: 0;
+  }
 
-    .maincant {
-        grid-template-columns: repeat(2, auto);
-    }
+  .maincant {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .card-main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    row-gap: 24px;
+  }
+
+  .learn-card-main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+
+  .newcard-b {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    .view-api {
-        font-size: 15px;
-    }
+  .mt-21 {
+    font-size: 15px;
+  }
 
-    .the-web {
-        font-size: 55px;
-        margin-top: 0;
-    }
+  .newcard-b {
+    display: grid;
+    grid-template-columns: auto;
 
-    .maincant {
-        grid-template-columns: repeat(1, auto);
-        margin-top: 47px;
-    }
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .card-main {
+    display: grid;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 24px;
+  }
+
+  .fs-65 {
+    font-size: 55px;
+    margin-top: 0;
+  }
+
+  .maincant {
+    grid-template-columns: repeat(1, auto);
+    margin-top: 47px;
+  }
+
+  .cant-cd,
+  .cant-cdd {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .learn-card-main {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 575.98px) {
-    .view-api {
-        font-size: 13px;
-        margin-top: 0;
-    }
+  .fs-65 {
+    font-size: 45px;
+    margin-top: 0px;
+  }
 
-    .the-web {
-        font-size: 45px;
-        margin-top: 0;
-    }
+  .mt-21 {
+    font-size: 12px;
+    margin-top: 0px;
+  }
 
-
+  .card-main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    column-gap: 35px;
+    row-gap: 24px;
+    margin-top: 47px;
+  }
 }
